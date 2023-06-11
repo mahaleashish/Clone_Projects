@@ -16,7 +16,7 @@ const Header_down_third = () => {
     document.execCommand("fontSize","",count)
   }
   return (
-    <div className={styles.header_down_third_container}>
+    <div className={styles.header_down_third_container} id="hd3">
         <RemoveIcon onClick={handleDecrease}/>
         <span>{count}</span>
         <AddIcon  onClick={handleIncrease}   />

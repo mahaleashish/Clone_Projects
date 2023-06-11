@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './header_down_first.module.css'
- import {RiArrowGoBackFill,RiArrowGoForwardLine} from "react-icons/ri"
+ import {RiArrowGoBackLine,RiArrowGoForwardLine} from "react-icons/ri"
  import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
 import LocalPrintshopOutlinedIcon from '@mui/icons-material/LocalPrintshopOutlined';
@@ -63,7 +63,7 @@ function handleSpellCheck(){
 
   return (
     <div className={styles.header_down_first_container}>
-    <button ><RiArrowGoBackFill onClick={()=>handleAddEvent("undo")}   /></button>
+    <button ><RiArrowGoBackLine onClick={()=>handleAddEvent("undo")}   /></button>
   <button onClick={()=>handleAddEvent("redo")}><RiArrowGoForwardLine/></button>
 <LocalPrintshopOutlinedIcon   onClick={()=>handlePrintEvent('myDiv')}/>
  <button onClick={handleSpellCheck} ><   SpellcheckIcon    /></button>      

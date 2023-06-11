@@ -1,0 +1,10 @@
+.styles.header_down_third_container{
+    display: flex;
+    border: red;
+    justify-content: center;
+}
+
+#hd3{
+    display: flex;
+    border: red;
+}

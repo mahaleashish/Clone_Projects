@@ -45,16 +45,18 @@ tag:"h5"},
     }
     return (
     <div className={styles.header_down_second_container}>
+            <div>
+                <select onChange={(e) => handleScreen(e.target.value)} name="fonts" >
+                    {ar_text.map(ele => <option value={ele.tag}>{ele.heading}</option>)}
+                </select>
+            </div>
+
         <div>
             <select name="Text"onChange={(e)=>handleFonts(e.target.value)} >
              {fontFamily.map(ele=><option value={ele}>{ele}</option>)}
             </select>
         </div>
-        <div>
-            <select onChange={(e)=>handleScreen(e.target.value)}   name="fonts" >
-             {ar_text.map(ele=><option value={ele.tag}>{ele.heading}</option>)}
-            </select>
-        </div>
+        
 
     </div>
   )

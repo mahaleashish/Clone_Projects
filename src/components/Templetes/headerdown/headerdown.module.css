@@ -1,6 +1,28 @@
 .header_down_container{
     display: flex;
+    flex-direction: row;
     gap:1rem;
-    height: 5rem;
+    height: fit-content;
+    justify-content: center;
     width: max-content;
+    background-color:#eff1f7;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 4px;
+    border-radius: 8px;
+    box-shadow: none;
+    overflow: visible;
+   
+}
+
+button{
+    border: none;
+}
+
+select{
+    border: none;
+}
+
+input{
+    border: solid gainsboro;
 }
